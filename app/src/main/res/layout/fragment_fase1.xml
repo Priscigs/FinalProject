@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.android.navigation.Fase1"
     >
-    <data>
-        <variable
-            name="fase1ViewModel"
-            type="com.example.proyectofinal.fase1.Fase1ViewModel" />
-    </data>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -61,7 +57,6 @@
             android:layout_marginBottom="520dp"
             android:background="@drawable/cuadro2"
             android:hint="@string/icorreo"
-            android:inputType="@string/email"
             android:textSize="17dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

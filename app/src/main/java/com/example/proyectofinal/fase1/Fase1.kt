@@ -18,10 +18,6 @@ import kotlinx.android.synthetic.main.fragment_fase1.*
  */
 class Fase1 : Fragment() {
 
-    private lateinit var fase1ViewModel: Fase1ViewModel
-    private lateinit var binding: FragmentFase1Binding
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
