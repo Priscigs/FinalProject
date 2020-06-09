@@ -38,6 +38,15 @@
     <string name="dia7"> </string>
     <string name="new_notification">Nueva notificación</string>
     <string name="email" />
-
+    <string name="info_text">drinkme@apps.com</string>
+    <string name="title_text">Drink Me</string>
+    <string name="instru">Oprima el logo para programar la alarma</string>
+    <string name="message">Es hora de tomar su medicamento</string>
+    <string name="about_app">Acerca</string>
+    <string name="aboutApp_text">
+        Drink Me se trata de una aplicación pensada para la administración y compra
+        de medicamentos. Los usuarios al comprar su medicamento, tendrán la oportunidad de hacer reseñas para que
+        otros usuarios puedan elegir de una manera más fácil los medicamentos que desean comprar. Asimismo, poder
+    programar alarmas para llevar un mejor control sobre su medicamento</string>
 
 </resources>

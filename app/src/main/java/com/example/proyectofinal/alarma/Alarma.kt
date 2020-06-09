@@ -2,14 +2,18 @@ package com.example.proyectofinal.alarma
 
 import android.annotation.SuppressLint
 import android.app.AlarmManager
+import android.app.Notification
 import android.app.PendingIntent
 import android.app.TimePickerDialog
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.*
 import android.widget.TimePicker
 import android.widget.Toast
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.proyectofinal.R
@@ -69,13 +73,22 @@ class Alarma : Fragment() {
             context?.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(context, MyAlarm::class.java)
         val pi = PendingIntent.getBroadcast(context, 0, intent, 0)
-        alarmManager.setRepeating(
-            AlarmManager.RTC_WAKEUP,
-            System.currentTimeMillis(),
-            AlarmManager.INTERVAL_DAY,
-            pi)
-        /*1000 * 60 * 10.toLong(),
-        pi
-    ) // Millisec * Second * Minute*/
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), AlarmManager.INTERVAL_DAY, pi)
     }
+
+    //private val CHANNEL_ID = "NOTIFICATION"
+    //private val NOTIFICATION_ID = 0
+
+    /*private fun notification() {
+        val builder = NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
+        builder.setSmallIcon(R.drawable.ic_launcher_background)
+        builder.setContentTitle("DRINK ME")
+        builder.setContentText("Hora de tomar tu medicamento")
+        builder.color = Color.MAGENTA
+        builder.priority = NotificationCompat.PRIORITY_DEFAULT
+        builder.setVibrate(longArrayOf(1000, 1000, 1000))
+        builder.setDefaults(Notification.DEFAULT_SOUND)
+        val notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext())
+        notificationManagerCompat.notify(NOTIFICATION_ID, builder.build())
+    }*/
 }

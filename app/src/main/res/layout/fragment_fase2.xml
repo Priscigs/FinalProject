@@ -175,18 +175,18 @@
             android:id="@+id/noche"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginBottom="200dp"
+            android:layout_marginBottom="212dp"
             android:background="@drawable/baseline_nights_stay_white_18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.765"
+            app:layout_constraintHorizontal_bias="0.76"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/dia"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginBottom="200dp"
+            android:layout_marginBottom="212dp"
             android:background="@drawable/baseline_brightness_5_white_18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -197,18 +197,18 @@
             android:id="@+id/medio"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginBottom="200dp"
+            android:layout_marginBottom="212dp"
             android:background="@drawable/baseline_brightness_6_white_18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/siguiente1"
             android:layout_width="170dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="88dp"
+            android:layout_marginBottom="48dp"
             android:background="@drawable/cuadro3"
             android:text="@string/siguiente"
             android:textColor="#3D0C3B"
@@ -230,6 +230,109 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.486"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/ordenLun"
+            android:layout_width="42dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="32dp"
+            android:text="Lun"
+            android:visibility="gone"
+            android:textColor="#F5F3F3"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/siguiente1"
+            app:layout_constraintEnd_toStartOf="@+id/ordenMar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medio" />
+
+        <TextView
+            android:id="@+id/ordenMar"
+            android:layout_width="42dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Mar"
+            android:visibility="gone"
+            android:textColor="#F5F3F3"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/siguiente1"
+            app:layout_constraintEnd_toStartOf="@+id/ordenMier"
+            app:layout_constraintStart_toEndOf="@+id/ordenLun"
+            app:layout_constraintTop_toBottomOf="@+id/medio" />
+
+        <TextView
+            android:id="@+id/ordenDom"
+            android:layout_width="42dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="32dp"
+            android:text="Dom"
+            android:visibility="gone"
+            android:textColor="#F5F3F3"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/siguiente1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ordenSab"
+            app:layout_constraintTop_toBottomOf="@+id/medio" />
+
+        <TextView
+            android:id="@+id/ordenMier"
+            android:layout_width="42dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Mier"
+            android:visibility="gone"
+            android:textColor="#F5F3F3"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/siguiente1"
+            app:layout_constraintEnd_toStartOf="@+id/ordenJue"
+            app:layout_constraintStart_toEndOf="@+id/ordenMar"
+            app:layout_constraintTop_toBottomOf="@+id/medio" />
+
+        <TextView
+            android:id="@+id/ordenJue"
+            android:layout_width="42dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Jue"
+            android:visibility="gone"
+            android:textColor="#F5F3F3"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/siguiente1"
+            app:layout_constraintEnd_toStartOf="@+id/ordenVier2"
+            app:layout_constraintStart_toEndOf="@+id/ordenMier"
+            app:layout_constraintTop_toBottomOf="@+id/medio" />
+
+        <TextView
+            android:id="@+id/ordenSab"
+            android:layout_width="42dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Sab"
+            android:visibility="gone"
+            android:textColor="#F5F3F3"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/siguiente1"
+            app:layout_constraintEnd_toStartOf="@+id/ordenDom"
+            app:layout_constraintStart_toEndOf="@+id/ordenVier2"
+            app:layout_constraintTop_toBottomOf="@+id/medio" />
+
+        <TextView
+            android:id="@+id/ordenVier2"
+            android:layout_width="42dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Vier"
+            android:visibility="gone"
+            android:textColor="#F5F3F3"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/siguiente1"
+            app:layout_constraintEnd_toStartOf="@+id/ordenSab"
+            app:layout_constraintStart_toEndOf="@+id/ordenJue"
+            app:layout_constraintTop_toBottomOf="@+id/medio" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
