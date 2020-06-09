@@ -17,8 +17,9 @@
         tools:layout="@layout/fragment_fase1" >
 
         <action
-        android:id="@+id/action_fase1_to_fase2"
-        app:destination="@id/fase2" />
+            android:id="@+id/action_fase1_to_fase2"
+            app:destination="@id/fase2"
+            app:popUpTo="@id/main" />
 
     </fragment>
 
@@ -30,7 +31,8 @@
 
         <action
             android:id="@+id/action_fase2_to_fase3"
-            app:destination="@id/fase3" />
+            app:destination="@id/fase3"
+            app:popUpTo="@id/main" />
 
     </fragment>
     <fragment
@@ -41,7 +43,8 @@
 
         <action
             android:id="@+id/action_fase3_to_alarma"
-            app:destination="@id/alarma" />
+            app:destination="@id/alarma"
+            app:popUpTo="@id/main" />
 
     </fragment>
 
@@ -53,7 +56,8 @@
 
         <action
             android:id="@+id/action_iniciar_to_alarma"
-            app:destination="@id/alarma" />
+            app:destination="@id/alarma"
+            app:popUpTo="@id/iniciar" />
         <action
             android:id="@+id/action_iniciar_to_precios"
             app:destination="@id/precios" />
