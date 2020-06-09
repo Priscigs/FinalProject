@@ -193,10 +193,10 @@
 
         <ImageView
             android:id="@+id/figura"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="568dp"
-            android:src="@drawable/lunita"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="552dp"
+            android:src="@drawable/pastillasDrink"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"

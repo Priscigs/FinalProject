@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="horizontal"
+    android:padding="30dp"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/quetzal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medicamento2"
+            android:layout_marginStart="8dp"
+            android:text="Precio:"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/medicamento2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Medicamento"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/precio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/quetzal"
+            android:layout_below="@id/medicamento2"
+            android:layout_marginStart="8dp"
+            android:text="Precio"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numero2"
+
+            android:layout_marginStart="8dp"
+            android:text="Direccion:"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/direccion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/num"
+            android:layout_toEndOf="@id/dir"
+            android:layout_marginStart="8dp"
+            android:text="Direccion"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precio2"
+            android:layout_marginStart="8dp"
+            android:text="Número:"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/numero2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precio2"
+            android:layout_toEndOf="@id/num"
+            android:layout_marginStart="8dp"
+            android:text="Numero"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

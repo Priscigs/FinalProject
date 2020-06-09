@@ -11,6 +11,8 @@
 
         <EditText
             android:id="@+id/precio"
+            android:paddingLeft="10dp"
+            android:inputType="text"
             android:layout_width="340dp"
             android:layout_height="50dp"
             android:layout_marginBottom="596dp"
@@ -40,6 +42,8 @@
             android:layout_width="340dp"
             android:layout_height="100dp"
             android:layout_marginBottom="368dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"
             android:background="@drawable/cuadrado"
             android:hint="@string/iescriba"
             android:textSize="17dp"
@@ -55,6 +59,8 @@
             android:layout_marginBottom="196dp"
             android:background="@drawable/cuadrado"
             android:hint="@string/iescriba"
+            android:paddingLeft="10dp"
+            android:inputType="text"
             android:textSize="17dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -93,6 +99,7 @@
             android:layout_height="50dp"
             android:layout_marginBottom="68dp"
             android:background="@drawable/cuadro3"
+
             android:text="@string/siguiente"
             android:textColor="#3D0C3B"
             android:textSize="17dp"

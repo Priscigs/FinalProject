@@ -1,9 +1,7 @@
-
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.navigation.Iniciar"
-    >
+    tools:context="com.example.android.navigation.Iniciar">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -40,9 +38,11 @@
             android:id="@+id/emailText"
             android:layout_width="280dp"
             android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
             android:layout_marginBottom="456dp"
             android:background="@drawable/cuadro2"
-            android:hint="@string/iusuario"
+            android:hint="@string/icorreo"
             android:textSize="17dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -53,6 +53,8 @@
             android:id="@+id/passwordText"
             android:layout_width="280dp"
             android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
             android:layout_marginBottom="380dp"
             android:background="@drawable/cuadro2"
             android:hint="@string/icontra"
