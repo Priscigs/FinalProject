@@ -6,12 +6,12 @@ import android.view.*
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-
 import com.example.proyectofinal.R
 import com.example.proyectofinal.database.ListaPrecios
 import com.example.proyectofinal.databinding.FragmentPreciosBinding
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_precios.*
+
 
 /**
  * A simple [Fragment] subclass.
@@ -36,16 +36,30 @@ class Precios : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
         val binding = DataBindingUtil.inflate<FragmentPreciosBinding>(
             inflater,
             R.layout.fragment_precios, container, false)
+        /*
+        binding.siguiente2.setOnClickListener{
+            // Write a message to the database
 
-
+            // Write a message to the database
+            val database = FirebaseDatabase.getInstance()
+            val myRef = database.getReference("Precio")
+            val farmacia = hashMapOf(
+                "medicamento" to "Loratadina",
+                "precio" to "130",
+                "direccion" to "6A Avenida, Cdad. de Guatemala.",
+                "numero" to "2422-2422")
+            myRef.child("farmacia2").setValue(farmacia)
+        }*/
 
         //RECYCLERVIEW
        /* rootView = inflater.inflate(R.layout.fragment_precios, container, false);
         initView()
         return rootView
+
 */
         setHasOptionsMenu(true)
         return binding.root
