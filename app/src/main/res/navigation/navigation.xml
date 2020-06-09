@@ -57,7 +57,7 @@
         <action
             android:id="@+id/action_iniciar_to_alarma"
             app:destination="@id/alarma"
-            app:popUpTo="@id/iniciar" />
+            app:popUpTo="@id/main" />
         <action
             android:id="@+id/action_iniciar_to_precios"
             app:destination="@id/precios" />
