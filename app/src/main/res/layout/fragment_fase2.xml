@@ -37,21 +37,6 @@
             app:layout_constraintHorizontal_bias="0.486"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <EditText
-            android:id="@+id/dosis"
-            android:layout_width="340dp"
-            android:layout_height="50dp"
-            android:paddingLeft="10dp"
-            android:inputType="text"
-            android:layout_marginBottom="484dp"
-            android:background="@drawable/cuadrado"
-            android:hint="@string/idosis"
-            android:textSize="17dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="parent" />
-
         <TextView
             android:id="@+id/ingreseF"
             android:layout_width="350dp"
@@ -337,6 +322,19 @@
             app:layout_constraintEnd_toStartOf="@+id/ordenSab"
             app:layout_constraintStart_toEndOf="@+id/ordenJue"
             app:layout_constraintTop_toBottomOf="@+id/medio" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cuadrado"
+            android:ems="10"
+            android:hint="@string/idosis"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/ingreseF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingreseD" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

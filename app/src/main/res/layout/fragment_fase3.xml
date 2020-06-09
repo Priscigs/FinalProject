@@ -9,21 +9,6 @@
         android:layout_height="match_parent"
         android:background="#3D0C3B">
 
-        <EditText
-            android:id="@+id/precio"
-            android:paddingLeft="10dp"
-            android:inputType="text"
-            android:layout_width="340dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="596dp"
-            android:background="@drawable/cuadrado"
-            android:hint="@string/iescriba"
-            android:textSize="17dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="parent" />
-
         <TextView
             android:id="@+id/iprecio"
             android:layout_width="350dp"
@@ -46,21 +31,6 @@
             android:inputType="text"
             android:background="@drawable/cuadrado"
             android:hint="@string/iescriba"
-            android:textSize="17dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <EditText
-            android:id="@+id/numero"
-            android:layout_width="340dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="196dp"
-            android:background="@drawable/cuadrado"
-            android:hint="@string/iescriba"
-            android:paddingLeft="10dp"
-            android:inputType="text"
             android:textSize="17dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -107,6 +77,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.788"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cuadrado"
+            android:ems="10"
+            android:hint="@string/iescriba"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/idireccion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iprecio" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cuadrado"
+            android:ems="10"
+            android:hint="@string/iescriba"
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/siguiente2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inumero" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

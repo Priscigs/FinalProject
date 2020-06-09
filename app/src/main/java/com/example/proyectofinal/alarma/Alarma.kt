@@ -80,15 +80,15 @@ class Alarma : Fragment() {
     //private val NOTIFICATION_ID = 0
 
     /*private fun notification() {
-        val builder = NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
+        val builder = NotificationCompat.Builder(requiredContext(), CHANNEL_ID)
         builder.setSmallIcon(R.drawable.ic_launcher_background)
         builder.setContentTitle("DRINK ME")
-        builder.setContentText("Hora de tomar tu medicamento")
+        builder.setContentText("Hora de tomar su medicamento")
         builder.color = Color.MAGENTA
         builder.priority = NotificationCompat.PRIORITY_DEFAULT
         builder.setVibrate(longArrayOf(1000, 1000, 1000))
         builder.setDefaults(Notification.DEFAULT_SOUND)
-        val notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext())
+        val notificationManagerCompat = NotificationManagerCompat.from(requiredContext())
         notificationManagerCompat.notify(NOTIFICATION_ID, builder.build())
     }*/
 }
