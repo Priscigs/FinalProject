@@ -9,18 +9,19 @@
         android:layout_height="match_parent"
         android:background="#3D0C3B">
 
-        <EditText
-            android:id="@+id/medicamento1"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="644dp"
-            android:background="@drawable/cuadrado"
-            android:ems="10"
-            android:hint="@string/imedicamento2"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="350dp"
+            android:layout_height="600dp"
+            android:layout_marginBottom="76dp"
+            android:clipToPadding="false"
+            android:padding="4dp"
+            android:scrollbars="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/lista_precios" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
